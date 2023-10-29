@@ -1,0 +1,12 @@
+
+/* ChatGPT Iconを上書き  */
+div.relative.text-white.flex.items-center.justify-center:has(svg) {
+    background-image: url(your-image.jpg);
+    background-size: contain;
+    background-color: white !important;
+ }
+ 
+ /* 入れ子構造うまく動作しないので、上書き */
+ div.relative.text-white.flex.items-center.justify-center:has(svg) > svg {	
+   display: none;
+ }
